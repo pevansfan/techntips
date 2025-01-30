@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech'n'Tips by La Manu - Tutoriels numériques</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body id="accueil">
+  <a href="#main-content" class="skip-link">Passer au contenu</a>
+  <header role="banner">
+    <h1>Tech'n'Tips by La Manu</h1>
+    <button class="burger" id="burger-menu" aria-label="Ouvrir le menu de navigation">☰</button>
+    <nav aria-label="Navigation principale" id="nav-links">
+      <ul>
+        <li><a href="#accueil" aria-current="page">Accueil</a></li>
+        <li><a href="#tutoriels" aria-current="page">Tutoriels</a></li>
+        <li><a href="#contact" aria-current="page">Contact</a></li>
+        <li><a href="./pages/accessiblité.html" aria-current="page">Accessibilité</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+    <section class="hero-banner">
+      <div class="overlay" aria-hidden="true"></div>
+      <div class="content-hero">
+        <h2 class="title-hero">Apprenez les compétences numériques <br> <span>essentielles !</span></h2>
+        <button class="pink-btn" aria-label="Commencez ici avec une fusée">
+          Commencez ici <i class="fa-solid fa-rocket"></i>
+        </button>
+      </div>
+    </section>
+
+    <section class="tutos" id="tutoriels">
+      <div class="group">
+        <h2>Découvrez nos différents tutoriels dans plusieurs catégories !</h2>
+        <div class="list__categories">
+          <ul>
+            <li data-category="tout" role="button" tabindex="0" aria-label="Afficher tous les tutoriels"
+              class="category active">Tout</li>
+            <li data-category="frontend" role="button" tabindex="0" aria-label="Afficher les tutoriels Front-end"
+              class="category">Front-end</li>
+            <li data-category="design" role="button" tabindex="0" aria-label="Afficher les tutoriels Design"
+              class="category">Design</li>
+            <li data-category="programmation" role="button" tabindex="0"
+              aria-label="Afficher les tutoriels Programmation" class="category">Programmation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="list-tutos">
+        <h2>Les tutos les plus populaires</h2>
+        <hr />
+        <div class="list">
+          <article class="tuto" data-category="frontend debutant">
+            <div class="head-img">
+              <img src="./assets/img/header.png" alt="Illustration d'un tutoriel HTML de base" />
+            </div>
+            <div class="content">
+              <h3>Tutoriel HTML de base</h3>
+              <p>Découvrez les fondamentaux du HTML et créez des pages web avec des balises sémantiques.</p>
+              <a href="#" aria-label="Lire plus sur le tutoriel HTML de base">Lire plus</a>
+            </div>
+          </article>
+          <article class="tuto" data-category="programmation debutant">
+            <div class="head-img">
+              <img src="./assets/img/header.png" alt="Illustration d'un tutoriel CSS pour débutants" />
+            </div>
+            <div class="content">
+              <h3>CSS pour les débutants</h3>
+              <p>Apprenez à styliser vos pages web avec des sélecteurs CSS, des couleurs, et bien plus encore.</p>
+              <a href="#" aria-label="Lire plus sur le CSS pour les débutants">Lire plus</a>
+            </div>
+          </article>
+          <article class="tuto" data-category="programmation">
+            <div class="head-img">
+              <img src="./assets/img/header.png" alt="Illustration d'un tutoriel sur le JavaScript" />
+            </div>
+            <div class="content">
+              <h3>Introduction au JavaScript</h3>
+              <p>Comprenez les bases du JavaScript et apprenez à rendre vos pages interactives.</p>
+              <a href="#" aria-label="Lire plus sur l'introduction au JavaScript">Lire plus</a>
+            </div>
+          </article>
+          <article class="tuto" data-category="programmation">
+            <div class="head-img">
+              <img src="./assets/img/header.png"
+                alt="Illustration d'un tutoriel sur la manipulation du DOM en JavaScript" />
+            </div>
+            <div class="content">
+              <h3>Manipuler le DOM en JavaScript</h3>
+              <p>Un guide sur la façon de modifier le DOM pour rendre les pages web interactives.</p>
+              <a href="#" aria-label="Lire plus sur Manipuler le DOM en JavaScript">Lire plus</a>
+            </div>
+          </article>
+          <article class="tuto" data-category="design">
+            <div class="head-img">
+              <img src="./assets/img/header.png" alt="Illustration d'un guide sur la typographie et les couleurs" />
+            </div>
+            <div class="content">
+              <div>
+                <h3>Choisir les bonnes polices et couleurs pour votre site web</h3>
+                <p>
+                  Un guide pratique pour les débutants sur la typographie et la théorie des couleurs dans le design web.
+                </p>
+              </div>
+              <a href="#" aria-label="Lire plus sur Choisir les bonnes polices et couleurs pour votre site web">Lire
+                plus</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content" id="contact">
+      <div class="footer-left">
+        <img src="./assets/img/logo-la-manu.png" alt="Logo de La Manu" />
+        <h3>Menu :</h3>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#tutoriels">Tutoriels</a></li>
+          <li><a href="./pages/accessibilite.html">Accessibilité</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h3>Contact :</h3>
+        <form action="" id="contact-form">
+          <div class="form-content">
+            <div class="form-group">
+              <div class="form-control">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre Email" aria-required="true" required />
+              </div>
+              <div class="form-control">
+                <label for="objet">Objet :</label>
+                <input type="text" id="objet" name="objet" placeholder="Votre objet" aria-required="true" required />
+              </div>
+            </div>
+            <div class="form-group form-control">
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" placeholder="Message ..." aria-required="true" required></textarea>
+            </div>
+
+          </div>
+          <div class="form-full-width">
+            <label>
+              <input type="checkbox" id="conditions" required aria-describedby="terms-desc" />
+              J'accepte les conditions d'utilisation
+            </label>
+          </div>
+          <button type="submit" class="pink-btn">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <small>Copyright - La Manu 2024</small>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

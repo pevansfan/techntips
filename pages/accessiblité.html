@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech'n'Tips by La Manu - Accessibilité</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Passer au contenu</a>
+    <header role="banner">
+        <h1>Tech'n'Tips by La Manu</h1>
+        <button class="burger" id="burger-menu" aria-label="Ouvrir le menu de navigation">☰</button>
+        <nav aria-label="Navigation principale" id="nav-links">
+            <ul>
+                <li><a href="#accueil" aria-current="page" alt="Accueil">Accueil</a></li>
+                <li><a href="#tutoriels" aria-current="page" alt="Tutoriels">Tutoriels</a></li>
+                <li><a href="#contact" aria-current="page" alt="Contact">Contact</a></li>
+                <li><a href="./pages/accessiblité.html" aria-current="accessibility"
+                        alt="Accessibilité">Accessibilité</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-accessibility" role="main">
+        <section class="content">
+            <h2>Notre engagement pour l'accessibilité</h2>
+            <p>Chez Tech'n'Tips, nous nous engageons à rendre notre contenu accessible à tous, y compris aux personnes
+                en situation de handicap.</p>
+
+            <h3>Principes d’accessibilité appliqués :</h3>
+            <ul>
+                <li>Utilisation de contrastes de couleurs adaptés</li>
+                <li>Navigation simplifiée au clavier</li>
+                <li>Compatibilité avec les lecteurs d’écran</li>
+                <li>Balises sémantiques pour une meilleure compréhension</li>
+            </ul>
+
+            <span class="btn-rgaa"><a href="../assets/pdf/regles-rgaa.pdf" aria-label="Règles RGAA"  download>Télécharger le fichier des règles RGAA</a></span>
+
+            <h3>Améliorations à venir</h3>
+            <p>Nous travaillons continuellement à améliorer l’accessibilité de notre site. Vos retours sont précieux !
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content" id="contact">
+            <div class="footer-left">
+                <img src="../assets/img/logo-la-manu.png" alt="Logo de La Manu" />
+                <h3>Menu :</h3>
+                <ul>
+                    <li><a href="../index.html" aria-current="Page d'accueil">Accueil</a></li>
+                    <li><a href="../index.html#tutos" aria-current="Page Tutoriels">Tutoriels</a></li>
+                    <li><a href="../pages/accessiblité.html" aria-current="Page Accessibilité">Accessibilité</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact :</h3>
+                <form action="" id="contact-form">
+                    <div class="form-content">
+                        <div class="form-group">
+                            <div class="form-control">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" placeholder="Votre Email" required />
+                            </div>
+                            <div class="form-control">
+                                <label for="objet">Objet :</label>
+                                <input type="text" id="objet" name="objet" placeholder="Votre objet" required />
+                            </div>
+                        </div>
+                        <div class="form-group form-control">
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message" placeholder="Message ..." required></textarea>
+                        </div>
+
+                    </div>
+                    <div class="form-full-width">
+                        <input type="checkbox" id="conditions" required />
+                        <label for="conditions">J'accepte les conditions d'utilisation</label>
+                    </div>
+                    <button type="submit" class="pink-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+        <small>Copyright - La Manu 2024</small>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
